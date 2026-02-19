@@ -172,6 +172,23 @@ class AudioCapture:
         except IndexError:
             return None
 
+    def get_last_chunk_and_clear(self):
+        """
+        Retrieves the *newest* chunk from the buffer and clears the rest.
+        Returns (chunk, dropped_count).
+        If buffer is empty, returns (None, 0).
+        """
+        if not self.audio_queue:
+            return None, 0
+            
+        dropped = len(self.audio_queue) - 1
+        # Get the last item (newest)
+        item = self.audio_queue[-1] 
+        # Clear the queue
+        self.audio_queue.clear()
+        
+        return item, dropped
+
     def save_chunk_to_wav(self, data, sample_rate, channels, output_dir="recordings"):
         """Saves a chunk of audio data to a WAV file."""
         if not os.path.exists(output_dir):
