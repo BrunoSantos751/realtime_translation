@@ -1,2 +1,5 @@
 pyaudiowpatch
 numpy
+openai-whisper
+torch
+scipy
