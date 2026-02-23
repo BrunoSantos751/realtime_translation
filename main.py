@@ -3,6 +3,7 @@ import time
 from speech.whisper_engine import WhisperTranscriber
 
 from audio.preprocess import convert_to_float32, to_mono, resample_audio, is_speech
+from pipeline.rolling_buffer import RollingAudioBuffer
 
 def main():
     capturer = AudioCapture()
@@ -14,48 +15,76 @@ def main():
         print("\nStarting capture (Press Ctrl+C to stop)...")
     
         # Initialize Transcriber
-        transcriber = WhisperTranscriber(model_name="base") # tiny, base, small, medium, large
+        transcriber = WhisperTranscriber(model_name="small") # tiny, base, small, medium, large
         
-        capturer.start_capture(chunk_duration=2.5) 
+        # Inicia o rolling buffer (janela: 2.5s, update: 0.5s)
+        rolling_buffer = RollingAudioBuffer(window_size=2.5, update_rate=0.5, sample_rate=16000)
+        
+        capturer.start_capture(chunk_duration=0.4) 
+        
+        silence_duration = 0.0
+        
         while True:
-            # Use the new method to get the latest chunk and clear backlog
-            chunk_data, dropped_count = capturer.get_last_chunk_and_clear()
+            # Puxa TODOS os pedaços acumulados na fila para evitar atrasos (latência)
+            chunks = []
+            while True:
+                c = capturer.get_latest_chunk()
+                if c:
+                    chunks.append(c)
+                else:
+                    break
             
-            if dropped_count > 0:
-                print(f"\n[Warning] High latency detected! Dropped {dropped_count} old audio chunks to catch up.")
+            if not chunks:
+                # Sleep briefly to avoid busy loop se a fila estiver vazia
+                time.sleep(0.01)
+                continue
+            
+            # Processa todos os pedaços capturados de uma vez
+            latest_timestamp = chunks[-1][1]
+            rate = chunks[0][2]
+            channels = chunks[0][3]
+            
+            # Combina os dados binários
+            combined_data = b"".join(c[0] for c in chunks)
+            
+            # Calcula latência baseada no fragmento mais RECENTE retornado
+            current_time = time.time()
+            capture_latency_ms = (current_time - latest_timestamp) * 1000
+            
+            # Preprocessing
+            audio_float = convert_to_float32(combined_data)
+            audio_mono = to_mono(audio_float, channels)
+            
+            # VAD Check no bloco de áudio atual para medir o tempo de silêncio
+            speech_detected, rms_val = is_speech(audio_mono, threshold=0.001)
+            
+            chunk_duration_sec = len(audio_mono) / rate
+            
+            if not speech_detected:
+                silence_duration += chunk_duration_sec
+                
+                # Só limpa o buffer se o silêncio durar mais de 2.5 segundos.
+                # Se for apenas uma pausa entre palavras (ex: 0.3s), mantemos no buffer!
+                if silence_duration > 2.5:
+                    rolling_buffer.clear()
+                    print(".", end="", flush=True)
+                    continue 
+            else:
+                silence_duration = 0.0
+                
+            audio_resampled = resample_audio(audio_mono, rate, 16000)
 
-            if chunk_data:
-                data, timestamp, rate, channels = chunk_data
-                
-                # Calculate latency
-                current_time = time.time()
-                capture_latency_ms = (current_time - timestamp) * 1000
-                
-                # Preprocessing
-                audio_float = convert_to_float32(data)
-                audio_mono = to_mono(audio_float, channels)
-                
-                # VAD Check (Skip silence)
-                # Lower limit to 0.005 to catch softer audio
-                speech_detected, rms_val = is_speech(audio_mono, threshold=0.001)
-                
-                if not speech_detected:
-                    print(f".{rms_val:.4f} ", end="", flush=True) 
-                    continue
-                
-                audio_resampled = resample_audio(audio_mono, rate, 16000)
-
+            # Adiciona ao buffer contínuo (short silences são incluídos para continuidade)
+            window_to_transcribe = rolling_buffer.append(audio_resampled)
+            
+            if window_to_transcribe is not None:
                 # Transcribe
-                # Language can be "pt", "en", etc. or None for auto-detection
-                text, processing_time_ms = transcriber.transcribe(audio_resampled, language="pt")
+                text, processing_time_ms = transcriber.transcribe(window_to_transcribe, language="pt")
                 
                 if text:
                     print(f"[{processing_time_ms:.0f}ms] {text} (Latency: {capture_latency_ms:.0f}ms)")
                 else:
-                    print(f".", end="", flush=True) # visual feedback for silence/no text
-                
-                # Save chunk (optional, can comment out to avoid disk spam)
-                # capturer.save_chunk_to_wav(data, rate, channels)
+                    print(".", end="", flush=True) # visual feedback for silence/no text
             
             # Sleep briefly to avoid busy loop if buffer is empty, 
             # but short enough to consume quickly
