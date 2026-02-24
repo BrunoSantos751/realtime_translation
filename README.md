@@ -112,8 +112,3 @@ No `main.py`, você pode ajustar:
 - [ ] **Interface gráfica (GUI)** — controles para iniciar/parar, selecionar modelo e idioma.
 - [ ] **Histórico de transcrições** — salvar transcrições em arquivo de texto.
 
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT.
