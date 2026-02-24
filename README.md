@@ -7,10 +7,11 @@ Ferramenta de transcrição e tradução em tempo real do áudio do sistema (loo
 ## ✨ Funcionalidades Atuais
 
 - **Captura de áudio via Loopback (WASAPI)** — captura tudo que sai pelo dispositivo de saída padrão do Windows, sem necessidade de microfone.
-- **Buffer circular com anti-latência** — descarta chunks antigos automaticamente para manter o pipeline sempre sincronizado com o áudio em tempo real.
+- **Buffer contínuo (Rolling Buffer)** — gerencia ativamente o fluxo de áudio, evitando acúmulo e latência progressiva.
 - **Pré-processamento de áudio** — converte para `float32`, mixagem stereo→mono e reamostragem para 16 kHz (padrão do Whisper).
 - **VAD simples (Voice Activity Detection)** — ignora silêncio com base em limiar de energia RMS, evitando transcrições vazias.
-- **Transcrição via OpenAI Whisper** — suporte a múltiplos modelos (`tiny`, `base`, `small`, `medium`, `large`) com aceleração GPU automática via CUDA.
+- **Transcrição via OpenAI Whisper** — suporte a múltiplos modelos (`tiny`, `base`, `small`, `medium`, `large`) com aceleração GPU instantânea via CUDA.
+- **Tradução Offline Incremental** — uso do **Argos Translate** para converter texto de Inglês para Português, analisando apenas o delta das palavras novas, evitando repetição de texto já traduzido.
 - **Captura em thread separada** — o processamento principal não bloqueia a captura de áudio.
 
 ---
@@ -29,8 +30,10 @@ realtime_translation/
 ├── speech/
 │   └── whisper_engine.py    # Wrapper do OpenAI Whisper para transcrição
 │
-├── pipeline/                # (futuro) Orquestração do pipeline completo
-├── translation/             # (futuro) Módulo de tradução
+├── pipeline/
+│   └── rolling_buffer.py    # Buffer contínuo para evitar latência cumulativa
+├── translation/
+│   └── translator.py        # Módulo de tradução offline com Argos Translate
 ├── overlay/                 # (futuro) Overlay na tela
 │
 └── tests/
@@ -69,8 +72,8 @@ python main.py
 
 O programa irá:
 1. Detectar automaticamente o dispositivo de saída padrão (loopback).
-2. Carregar o modelo Whisper (`base` por padrão).
-3. Iniciar a transcrição em tempo real no terminal.
+2. Carregar o modelo Whisper (`small` por padrão) e o modelo de tradução do Argos Translate (baixa automaticamente no primeiro uso).
+3. Iniciar a captura de áudio, executando VAD, transcrição em Inglês e tradução inteligente para o Português em tempo real no terminal.
 
 Pressione `Ctrl+C` para encerrar.
 
@@ -81,9 +84,10 @@ No `main.py`, você pode ajustar:
 | Parâmetro | Onde | Descrição |
 |---|---|---|
 | `model_name` | `WhisperTranscriber(model_name=...)` | Modelo Whisper: `tiny`, `base`, `small`, `medium`, `large` |
-| `chunk_duration` | `capturer.start_capture(chunk_duration=...)` | Duração de cada chunk em segundos (padrão: `2.5s`) |
-| `language` | `transcriber.transcribe(..., language=...)` | Idioma do áudio: `"pt"`, `"en"`, `None` (auto) |
-| `threshold` | `is_speech(..., threshold=...)` | Sensibilidade do VAD (padrão: `0.001`) |
+| `chunk_duration` | `capturer.start_capture(...)` | Duração da captura rápida de cada chunk em segundos (ex: `0.4s`) |
+| `language` | `transcriber.transcribe(..., language=...)` | Idioma de *origem* capturado no áudio, ex: `"en"` |
+| `window_size` | `RollingAudioBuffer(window_size=...)` | Tamanho da janela enviada ao Whisper (padrão: `2.5s`) |
+| `from_code` / `to_code` | `TranslationEngine(from_code=..., to_code=...)` | Idiomas de tradução, do Argos Translate (ex: `"en"` para `"pt"`) |
 
 ---
 
@@ -96,12 +100,13 @@ No `main.py`, você pode ajustar:
 | `torch` | Backend para execução do Whisper (CPU ou GPU) |
 | `numpy` | Manipulação de arrays de áudio |
 | `scipy` | Reamostragem de áudio |
+| `argostranslate` | Tradução local offline |
 
 ---
 
 ## 🗺️ Roadmap
 
-- [ ] **Módulo de Tradução** — integração com API de tradução (ex: DeepL, Google Translate ou modelo local) para traduzir o texto transcrito em tempo real.
+- [x] **Módulo de Tradução offline** — traduzindo transcrições com algoritmos anti-repetição usando Argos Translate.
 - [ ] **Overlay na Tela** — exibição do texto transcrito/traduzido como uma janela flutuante transparente sobre outras aplicações (ideal para lives, videoconferências e conteúdo em língua estrangeira).
 - [ ] **Seleção de idioma de origem e destino** via interface ou configuração.
 - [ ] **Interface gráfica (GUI)** — controles para iniciar/parar, selecionar modelo e idioma.
