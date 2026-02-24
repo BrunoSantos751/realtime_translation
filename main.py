@@ -17,6 +17,9 @@ def main():
         # Initialize Transcriber
         transcriber = WhisperTranscriber(model_name="small") # tiny, base, small, medium, large
         
+        from translation.translator import TranslationEngine
+        translator = TranslationEngine()
+        
         # Inicia o rolling buffer (janela: 2.5s, update: 0.5s)
         rolling_buffer = RollingAudioBuffer(window_size=2.5, update_rate=0.5, sample_rate=16000)
         
@@ -67,6 +70,7 @@ def main():
                 # Se for apenas uma pausa entre palavras (ex: 0.3s), mantemos no buffer!
                 if silence_duration > 2.5:
                     rolling_buffer.clear()
+                    translator.clear_state()
                     print(".", end="", flush=True)
                     continue 
             else:
@@ -79,10 +83,13 @@ def main():
             
             if window_to_transcribe is not None:
                 # Transcribe
-                text, processing_time_ms = transcriber.transcribe(window_to_transcribe, language="pt")
+                text, processing_time_ms = transcriber.transcribe(window_to_transcribe, language="en")
                 
                 if text:
-                    print(f"[{processing_time_ms:.0f}ms] {text} (Latency: {capture_latency_ms:.0f}ms)")
+                    translated_text, trans_time_ms = translator.incremental_translate(text)
+                    if translated_text:
+                        print(f"\n[EN] {text}")
+                        print(f"[PT] {translated_text} (W:{processing_time_ms:.0f}ms | T:{trans_time_ms:.0f}ms | Latency:{capture_latency_ms:.0f}ms)")
                 else:
                     print(".", end="", flush=True) # visual feedback for silence/no text
             

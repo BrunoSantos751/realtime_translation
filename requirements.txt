@@ -3,3 +3,4 @@ numpy
 openai-whisper
 torch
 scipy
+argostranslate
