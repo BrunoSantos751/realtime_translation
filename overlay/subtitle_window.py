@@ -2,14 +2,21 @@ import tkinter as tk
 import threading
 import queue
 import time
+import ctypes
+import os
 
 class SubtitleOverlay:
-    def __init__(self, font_family="Arial", font_size=28, text_color="#FFFF00"):
+    def __init__(self, font_family="Arial", font_size=28, text_color="#FFFF00", 
+                 position="bottom-center", x_offset=0, y_offset=150):
         """
         Inicializa o overlay transparente de legendas.
         Usa preto ('black') como cor de Chroma Key para o Windows ignorar e deixar invisível.
         """
         self.root = tk.Tk()
+        
+        self.position = position
+        self.x_offset = x_offset
+        self.y_offset = y_offset
         
         # Oculta a janela brevemente durante a construção para evitar "pulos" visuais
         self.root.withdraw()
@@ -40,25 +47,64 @@ class SubtitleOverlay:
         # Fila thread-safe para receber atualizações do main.py
         self.text_queue = queue.Queue()
         
-        self._recenter_window()
+        self._update_window_position()
+        self._apply_clickthrough()
         self.root.deiconify() # Revela a janela
         
         # Inicia loop de leitura da fila
         self._check_queue()
 
-    def _recenter_window(self):
-        """Centraliza a janela na parte inferior da tela, como legendas comuns."""
+    def _apply_clickthrough(self):
+        """
+        No Windows, injeta estilos estendidos para a janela ignorar cliques (Click-Through)
+        e ser 100% transparente a eventos do mouse.
+        """
+        if os.name == 'nt':
+            # Obtém o handle da janela (HWND) do Tkinter
+            self.root.update_idletasks()
+            hwnd = ctypes.windll.user32.GetParent(self.root.winfo_id())
+            
+            # Constantes da API do Windows baseadas em winuser.h
+            GWL_EXSTYLE = -20
+            WS_EX_LAYERED = 0x00080000
+            WS_EX_TRANSPARENT = 0x00000020
+            
+            # Pega estilo atual
+            current_style = ctypes.windll.user32.GetWindowLongW(hwnd, GWL_EXSTYLE)
+            
+            # Aplica Layered (necessário para transparência) e Transparent (click-through)
+            new_style = current_style | WS_EX_LAYERED | WS_EX_TRANSPARENT
+            ctypes.windll.user32.SetWindowLongW(hwnd, GWL_EXSTYLE, new_style)
+
+    def _update_window_position(self):
+        """Atualiza a posição da janela baseando-se no texto atual e configurações de âncora."""
         self.root.update_idletasks() # Garante que as dimensões foram computadas
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
         
         window_width = self.root.winfo_width()
+        window_height = self.root.winfo_height()
         
-        # x centralizado, y na parte inferior (com margem de 150 pixels)
-        x = (screen_width // 2) - (window_width // 2)
-        y = screen_height - 150 
+        x, y = 0, 0
         
-        self.root.geometry(f"+{x}+{y}")
+        # Lógica de ancoragem horizontal
+        if "center" in self.position:
+            x = (screen_width // 2) - (window_width // 2)
+        elif "left" in self.position:
+            x = self.x_offset
+        elif "right" in self.position:
+            x = screen_width - window_width - self.x_offset
+            
+        # Lógica de ancoragem vertical
+        if "bottom" in self.position:
+            y = screen_height - window_height - self.y_offset
+        elif "top" in self.position:
+            y = self.y_offset
+        # Caso seja exatamente 'center' para y
+        if self.position == "center":
+            y = (screen_height // 2) - (window_height // 2)
+        
+        self.root.geometry(f"+{int(x)}+{int(y)}")
 
     def _check_queue(self):
         """Pool de atualizações: verifica periodicamente se há novo texto para exibir."""
@@ -73,7 +119,7 @@ class SubtitleOverlay:
                 self.label.config(text=new_text)
                 
                 # Reposiciona caso o texto tenha feito a janela mudar de largura/altura
-                self._recenter_window()
+                self._update_window_position()
                 
         except queue.Empty:
             pass
