@@ -1,11 +1,13 @@
 from audio.capture import AudioCapture
 import time
+import threading
 from speech.whisper_engine import WhisperTranscriber
 
 from audio.preprocess import convert_to_float32, to_mono, resample_audio, is_speech
 from pipeline.rolling_buffer import RollingAudioBuffer
+from overlay.subtitle_window import SubtitleOverlay
 
-def main():
+def audio_processing_loop(overlay: SubtitleOverlay):
     capturer = AudioCapture()
     try:
         print("Listing valid loopback devices:")
@@ -71,6 +73,7 @@ def main():
                 if silence_duration > 2.5:
                     rolling_buffer.clear()
                     translator.clear_state()
+                    overlay.update_text("") # Limpa a legenda na tela
                     print(".", end="", flush=True)
                     continue 
             else:
@@ -90,6 +93,7 @@ def main():
                     if translated_text:
                         print(f"\n[EN] {text}")
                         print(f"[PT] {translated_text} (W:{processing_time_ms:.0f}ms | T:{trans_time_ms:.0f}ms | Latency:{capture_latency_ms:.0f}ms)")
+                        overlay.update_text(translated_text) # Atualiza a legenda na tela
                 else:
                     print(".", end="", flush=True) # visual feedback for silence/no text
             
@@ -99,8 +103,28 @@ def main():
 
     except KeyboardInterrupt:
         print("\nStopping capture...")
+        overlay.close()
+    except Exception as e:
+        print(f"\nError in audio processing loop: {e}")
+        overlay.close()
     finally:
         capturer.close()
+
+def main():
+    print("Inicializando Overlay de Legendas...")
+    overlay = SubtitleOverlay(font_size=32)
+    
+    # Inicia o processamento de áudio em uma thread separada (background)
+    audio_thread = threading.Thread(target=audio_processing_loop, args=(overlay,), daemon=True)
+    audio_thread.start()
+    
+    # Inicia o loop principal do Tkinter (UI) na thread principal
+    # Isso vai travar a thread atual até a janela ser fechada
+    try:
+        overlay.start()
+    except KeyboardInterrupt:
+        print("\nEncerrando aplicação...")
+        overlay.close()
 
 if __name__ == "__main__":
     main()
