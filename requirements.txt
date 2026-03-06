@@ -1,6 +1,6 @@
 pyaudiowpatch
 numpy
-openai-whisper
+faster-whisper
 torch
 scipy
 argostranslate
