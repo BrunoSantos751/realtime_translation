@@ -1,0 +1,983 @@
+2026-04-06 20:31:48.674 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:31:48.710 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:31:51.309 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:31:51.309 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:31:51.310 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:31:52.877 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:31:52.878 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:31:52.878 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:31:58.181 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:31:58.182 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:31:58.182 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:31:58.182 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:31:58.183 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:33:55.077 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:33:55.093 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:33:56.316 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:33:56.316 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:33:56.316 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:33:57.104 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:33:57.106 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:33:57.106 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:34:03.852 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:34:03.853 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:34:03.853 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:34:03.853 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:34:03.855 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:34:11.204 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:34:11.204 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:34:11.204 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:34:11.204 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:34:11.213 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:34:11.593 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that
+2026-04-06 20:34:16.461 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 100352
+2026-04-06 20:34:17.029 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people.
+2026-04-06 20:34:17.181 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 112128
+2026-04-06 20:34:17.837 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know.
+2026-04-06 20:34:17.892 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 123904
+2026-04-06 20:34:18.752 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not.
+2026-04-06 20:34:18.795 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 138752
+2026-04-06 20:34:19.434 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI, what a-
+2026-04-06 20:34:19.613 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 153088
+2026-04-06 20:34:20.222 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you?
+2026-04-06 20:34:20.252 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 162304
+2026-04-06 20:34:20.943 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think.
+2026-04-06 20:34:20.996 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 174592
+2026-04-06 20:34:21.676 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real.
+2026-04-06 20:34:21.712 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 184320
+2026-04-06 20:34:22.562 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think.
+2026-04-06 20:34:22.718 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 200704
+2026-04-06 20:34:23.805 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think.
+2026-04-06 20:34:23.809 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 220160
+2026-04-06 20:34:24.733 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.
+2026-04-06 20:34:24.779 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 234496
+2026-04-06 20:34:25.829 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.
+2026-04-06 20:34:25.830 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 251392
+2026-04-06 20:34:26.802 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation.
+2026-04-06 20:34:26.879 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 268288
+2026-04-06 20:34:28.013 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation you're going to be in
+2026-04-06 20:34:28.063 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 287232
+2026-04-06 20:34:29.313 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are. So in this conversation, you're going to be immersed in real life English.
+2026-04-06 20:34:29.667 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 313856
+2026-04-06 20:34:31.082 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help.
+2026-04-06 20:34:31.154 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 335360
+2026-04-06 20:34:32.254 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become English.
+2026-04-06 20:34:32.517 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 359424
+2026-04-06 20:34:33.698 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker.
+2026-04-06 20:34:33.770 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 378368
+2026-04-06 20:34:35.003 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always.
+2026-04-06 20:34:35.041 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 397824
+2026-04-06 20:34:36.221 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free.
+2026-04-06 20:34:36.266 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 419328
+2026-04-06 20:34:37.487 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet.
+2026-04-06 20:34:37.608 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 440832
+2026-04-06 20:34:38.916 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over dance face.
+2026-04-06 20:34:39.112 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 464896
+2026-04-06 20:34:40.453 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think. I think you are. So in this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over dance face. It's going to include all
+2026-04-06 20:34:40.492 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 486400
+2026-04-06 20:34:41.863 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over dance face. It's going to include all of the vocabulary that you...
+2026-04-06 20:34:42.380 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 515072
+2026-04-06 20:34:44.016 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today.
+2026-04-06 20:34:44.182 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 544256
+2026-04-06 20:34:45.746 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus.
+2026-04-06 20:34:45.822 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 570368
+2026-04-06 20:34:47.497 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF.
+2026-04-06 20:34:47.541 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 599552
+2026-04-06 20:34:50.160 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. And this is a...
+2026-04-06 20:34:50.247 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 642560
+2026-04-06 20:34:53.058 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. This is a listening version, an audio version.
+2026-04-06 20:34:53.173 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 688128
+2026-04-06 20:34:55.389 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. This is a listening version, an audio version of today's entire lesson. It's kind of like a min-
+2026-04-06 20:34:55.498 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 726528
+2026-04-06 20:34:58.047 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. And this is...  a listening version, an audio version of today's entire lesson. It's kind of like a mini podcast episode, so you can down.
+2026-04-06 20:34:58.321 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 772096
+2026-04-06 20:35:00.697 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. And this is...  a listening version, an audio version of today's entire lesson. It's kind of like a mini podcast episode, so you can download the listening version, and you can listen to it.
+2026-04-06 20:35:00.804 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 810496
+2026-04-06 20:35:03.249 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. And this is...  a listening version, an audio version of today's entire lesson. It's kind of like a mini podcast episode, so you can download the listening version and you can listen to it wherever you go while you're walking your dog while you
+2026-04-06 20:35:03.359 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 851456
+2026-04-06 20:35:05.958 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give you something that AI cannot give you. And that is a real conversation between real people. I know I'm not AI. What about you? I mean, I think I'm real. I think you are.  In this conversation, you're going to be immersed in real life English, which is the key to help you also become a natural fluent English speaker. And like always, I have created a free PDF worksheet here over Dan's face. It's going to include all of the vocabulary that you're about to learn today. Plus, I have added a bonus in the free PDF. And this is...  a listening version, an audio version of today's entire lesson. It's kind of like a mini podcast episode, so you can download the listening version and you can listen to it wherever you go while you're walking your dog while you are doing the dishes while you're doing anything.
+2026-04-06 20:36:02.627 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:36:02.639 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 880640
+2026-04-06 20:36:02.639 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:36:02.692 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:36:02.694 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:36:02.698 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:02.812 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:02.921 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.029 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.137 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.246 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.355 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.465 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.574 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.684 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.793 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:03.902 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.012 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.121 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.230 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.341 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.453 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.562 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.672 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.781 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:04.891 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.002 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.112 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.221 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.332 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.443 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.553 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.661 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.771 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.881 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:05.991 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:06.101 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:36:06.197 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:36:06.221 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 3.53 seconds
+2026-04-06 20:36:06.222 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:36:06.222 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:36:06.225 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:36:36.016 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 0
+2026-04-06 20:36:36.016 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'inactive'
+2026-04-06 20:36:36.064 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:36:36.065 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:36:36.066 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:36:45.123 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:41:00.793 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:41:00.812 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:41:03.057 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:41:03.057 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:41:03.057 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:41:03.917 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:41:03.919 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:41:03.919 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:41:11.673 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:41:11.673 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:41:11.674 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:41:11.674 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:41:11.675 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:41:12.199 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:41:12.199 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:41:12.199 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:41:12.199 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:41:12.211 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 7168
+2026-04-06 20:41:12.554 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  version.
+2026-04-06 20:41:15.047 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 52736
+2026-04-06 20:41:15.646 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and
+2026-04-06 20:41:15.757 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 61952
+2026-04-06 20:41:16.431 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description until you're named
+2026-04-06 20:41:16.481 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 74240
+2026-04-06 20:41:17.154 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description until your name and email
+2026-04-06 20:41:17.283 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 88576
+2026-04-06 20:41:18.064 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description until your name and email address
+2026-04-06 20:41:18.089 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 100352
+2026-04-06 20:41:19.004 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and hello
+2026-04-06 20:41:19.106 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 117248
+2026-04-06 20:41:19.829 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and hello just like that in the latest
+2026-04-06 20:41:19.876 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 129536
+2026-04-06 20:41:20.622 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and allow just like that in the land in your email
+2026-04-06 20:41:20.744 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 143872
+2026-04-06 20:41:21.601 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and hello just like that in the land in your email inbox it is
+2026-04-06 20:41:21.711 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 158208
+2026-04-06 20:41:22.542 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and hello just like that in the land in your email inbox. It is my gift
+2026-04-06 20:41:22.578 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 172544
+2026-04-06 20:41:23.609 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and hello just like that in the land in your email inbox. It is my gift to you. So don't
+2026-04-06 20:41:23.893 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 194048
+2026-04-06 20:41:24.837 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and allow just like that in the land in your email inbox. It is my gift to you. So don't wait. Make sure you get the PDF.
+2026-04-06 20:41:25.094 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 210944
+2026-04-06 20:41:26.134 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description and to your name and email address and allow just like that in the land in your email inbox. It is my gift to you. So don't wait. Make sure you get the PDF work sheet and
+2026-04-06 20:41:26.181 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 230400
+2026-04-06 20:41:26.906 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:41:26.911 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 240128
+2026-04-06 20:41:26.912 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:41:26.967 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:41:26.970 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:41:26.973 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.085 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.194 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.304 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.413 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.522 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.568 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  All you need to do is click the link in the description, and to your name and email address, and hello, just like that in the land in your email inbox. It is my gift to you. So don't wait. Make sure you get the PDF work sheet and bonus audio version.
+2026-04-06 20:41:27.634 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.742 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.852 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:27.962 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.071 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.180 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.289 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.399 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.507 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.618 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.727 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.835 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:28.945 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:29.054 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:41:29.067 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:41:29.114 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 2.14 seconds
+2026-04-06 20:41:29.115 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:41:29.115 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:41:29.117 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:41:29.603 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:41:29.603 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:41:29.603 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:41:29.603 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:41:29.611 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 17920
+2026-04-06 20:41:30.187 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  ready to talk about
+2026-04-06 20:41:30.250 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 27648
+2026-04-06 20:41:30.929 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  ready to talk about my child.
+2026-04-06 20:41:30.983 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 39936
+2026-04-06 20:41:31.574 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes
+2026-04-06 20:41:31.605 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 49152
+2026-04-06 20:41:32.213 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the tough
+2026-04-06 20:41:32.261 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 58880
+2026-04-06 20:41:32.895 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today
+2026-04-06 20:41:32.927 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 70656
+2026-04-06 20:41:33.668 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today. It is
+2026-04-06 20:41:33.699 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 82944
+2026-04-06 20:41:34.401 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today. It is we're going to be
+2026-04-06 20:41:34.848 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 101888
+2026-04-06 20:41:35.763 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today. It is we're going to be talking about a
+2026-04-06 20:41:35.802 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 116736
+2026-04-06 20:41:36.579 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today. It is we're going to be talking about a few questions
+2026-04-06 20:41:36.604 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 128512
+2026-04-06 20:41:37.433 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Ready to talk about my childhood. Yes, that is the topic for today. It is we're going to be talking about a few questions based on our
+2026-04-06 20:41:37.543 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 145408
+2026-04-06 20:41:38.488 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I'm ready to talk about my childhood. Yes, that is the topic for today. It is we're going to be talking about a few questions based on our childhoods.
+2026-04-06 20:42:59.518 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:42:59.518 - RealTimeSTT: realtimestt - ERROR - Unhandled exeption in _recording_worker: [WinError 6] Identificador inválido
+Traceback (most recent call last):
+  File "C:\Users\Bruno\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\RealtimeSTT\audio_recorder.py", line 1919, in _recording_worker
+    data = self.audio_queue.get(timeout=0.01)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\queues.py", line 111, in get
+    if not self._poll(timeout):
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 346, in _poll
+    return bool(wait([self], timeout))
+                ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1100, in wait
+    ov.cancel()
+    ~~~~~~~~~^^
+OSError: [WinError 6] Identificador inválido
+2026-04-06 20:42:59.536 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 152576
+2026-04-06 20:42:59.536 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:42:59.537 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:42:59.537 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:46:06.323 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:46:06.347 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:46:08.720 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:46:08.720 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:46:08.723 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:46:09.770 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:46:09.773 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:46:09.773 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:46:18.004 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:46:18.004 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:46:18.005 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:46:18.005 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:46:18.008 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:46:19.868 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:46:19.868 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:46:19.868 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:46:19.868 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:46:19.888 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:46:20.380 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kid's now...
+2026-04-06 20:46:23.127 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 68608
+2026-04-06 20:46:23.909 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more there
+2026-04-06 20:46:24.023 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 82944
+2026-04-06 20:46:24.812 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more. They are attached to their...
+2026-04-06 20:46:24.877 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 97280
+2026-04-06 20:46:25.829 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more. They are attached to their screens more.
+2026-04-06 20:46:26.030 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 115712
+2026-04-06 20:46:26.851 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more. They are attached to their screens more. They probably heard me say this.
+2026-04-06 20:46:26.923 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 128512
+2026-04-06 20:46:27.784 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more. They are attached to their screens more. You probably heard me say this.
+2026-04-06 20:46:27.861 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 145408
+2026-04-06 20:46:28.759 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I-
+2026-04-06 20:46:28.838 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 159744
+2026-04-06 20:46:29.689 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is really...
+2026-04-06 20:46:29.756 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 174080
+2026-04-06 20:46:30.653 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is really interesting.
+2026-04-06 20:46:30.691 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 190976
+2026-04-06 20:46:31.661 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to come.
+2026-04-06 20:46:31.742 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 207872
+2026-04-06 20:46:32.549 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations.
+2026-04-06 20:46:32.603 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 220160
+2026-04-06 20:46:33.468 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations childhood.
+2026-04-06 20:46:33.491 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 234496
+2026-04-06 20:46:34.574 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods.
+2026-04-06 20:46:34.728 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 256000
+2026-04-06 20:46:35.854 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods. So are you ready for my first question?
+2026-04-06 20:46:35.946 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 274944
+2026-04-06 20:46:37.220 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods. So are you ready for my first question? I'm ready. Let's do it.
+2026-04-06 20:46:37.293 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 296960
+2026-04-06 20:46:38.881 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  That kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods. So are you ready for my first question? I'm ready. Let's do it. All right, Dan does not know what these questions.
+2026-04-06 20:46:38.995 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 323072
+2026-04-06 20:46:40.504 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods. So are you ready for my first question? I'm ready. Let's do it. All right, Dan does not know what these questions are. Yes, it's a mystery.
+2026-04-06 20:46:40.875 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 354304
+2026-04-06 20:46:42.504 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  that kids nowadays are inside more. They are attached to their screens more. They probably heard me say this. And I think it is a really interesting conversation to compare different generations' childhoods. So are you ready for my first question? I'm ready. Let's do it. All right, Dan does not know what these questions are. Yes, it's a mystery. I want you to think back to...
+2026-04-06 20:49:08.213 - RealTimeSTT: realtimestt - DEBUG - Receive from stdout pipe
+2026-04-06 20:49:08.213 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:49:08.214 - RealTimeSTT: realtimestt - INFO - None
+2026-04-06 20:49:08.214 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 373760
+2026-04-06 20:49:08.214 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:49:08.215 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:49:08.215 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:51:30.609 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:51:30.646 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:51:33.094 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:51:33.094 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:51:33.095 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:51:34.150 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:51:34.152 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:51:34.152 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:51:43.206 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:51:43.207 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:51:43.208 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:51:43.208 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:51:43.210 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:51:44.042 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:51:44.042 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:51:44.042 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:51:44.043 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:51:44.045 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 9216
+2026-04-06 20:51:44.473 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I would
+2026-04-06 20:51:46.999 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 57344
+2026-04-06 20:51:47.492 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long.
+2026-04-06 20:51:47.607 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 67072
+2026-04-06 20:51:48.144 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my-
+2026-04-06 20:51:48.544 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 83968
+2026-04-06 20:51:49.150 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother.
+2026-04-06 20:51:49.188 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 93184
+2026-04-06 20:51:49.770 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother and we could walk.
+2026-04-06 20:51:49.823 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 102912
+2026-04-06 20:51:50.385 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother and we could walk to.
+2026-04-06 20:51:50.415 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 112640
+2026-04-06 20:51:50.996 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother and we could walk to...
+2026-04-06 20:51:51.091 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 122880
+2026-04-06 20:51:51.702 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the...
+2026-04-06 20:51:51.738 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 134144
+2026-04-06 20:51:52.440 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground.
+2026-04-06 20:51:52.511 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 145920
+2026-04-06 20:51:53.178 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to him.
+2026-04-06 20:51:53.240 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 158208
+2026-04-06 20:51:53.939 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond.
+2026-04-06 20:51:53.969 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 169984
+2026-04-06 20:51:54.743 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves.
+2026-04-06 20:51:54.791 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 182272
+2026-04-06 20:51:55.516 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves.
+2026-04-06 20:51:55.516 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 194048
+2026-04-06 20:51:56.303 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot.
+2026-04-06 20:51:56.363 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 208384
+2026-04-06 20:51:57.150 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot.
+2026-04-06 20:51:57.150 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 220672
+2026-04-06 20:51:57.944 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot.
+2026-04-06 20:51:57.945 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 232448
+2026-04-06 20:51:58.778 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little...
+2026-04-06 20:51:58.855 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 246784
+2026-04-06 20:51:59.750 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict.
+2026-04-06 20:51:59.782 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 261120
+2026-04-06 20:52:00.782 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to...
+2026-04-06 20:52:00.864 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 280576
+2026-04-06 20:52:01.818 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to going over to Friendship.
+2026-04-06 20:52:01.884 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 294912
+2026-04-06 20:52:02.998 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to going over to friend's house or like nape.
+2026-04-06 20:52:03.123 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 316416
+2026-04-06 20:52:04.168 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to going over to friend's house or like neighbor's house. Okay.
+2026-04-06 20:52:04.222 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 333312
+2026-04-06 20:52:05.309 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to going over to friend's house or like neighbor's house. They were very...
+2026-04-06 20:52:05.349 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 352768
+2026-04-06 20:52:06.446 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  So I was allowed to kind of roam my neighborhood as long as I was with my brother. And we could walk to the playground, we could walk to a pond by ourselves, which we did quite a lot. My parents were a little more strict though when it came to going over to friend's house or like neighbor's house. They were very cautious about.
+2026-04-06 20:52:07.001 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:52:07.006 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 376832
+2026-04-06 20:52:07.006 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:52:07.031 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:52:07.032 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:52:07.034 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.135 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.245 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.353 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.464 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.574 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.684 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.793 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:07.902 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.011 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.121 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.230 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.339 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.447 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.557 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:08.568 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:52:08.618 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.59 seconds
+2026-04-06 20:52:08.620 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:52:08.620 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:52:08.629 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:52:08.784 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:52:08.784 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:52:08.784 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:52:08.784 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:52:08.785 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 15872
+2026-04-06 20:52:09.327 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence.
+2026-04-06 20:52:09.537 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 30208
+2026-04-06 20:52:09.977 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the universe.
+2026-04-06 20:52:10.016 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 37376
+2026-04-06 20:52:10.547 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence of the influence of the influence.
+2026-04-06 20:52:10.610 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 47104
+2026-04-06 20:52:11.115 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence of the influence of the influence. Especially like movies.
+2026-04-06 20:52:11.164 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 54272
+2026-04-06 20:52:11.782 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence.
+2026-04-06 20:52:11.907 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 66048
+2026-04-06 20:52:12.662 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence.
+2026-04-06 20:52:12.840 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 82944
+2026-04-06 20:52:13.490 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence. Especially like movies they'd watch, or video games, or whatever.
+2026-04-06 20:52:13.678 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 94720
+2026-04-06 20:52:14.474 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence. Especially like movies they'd watch, or video games, or whatever. Yeah. And you know.
+2026-04-06 20:52:14.541 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 109568
+2026-04-06 20:52:17.144 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence of the influence
+2026-04-06 20:52:31.620 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:52:31.621 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 114688
+2026-04-06 20:52:31.621 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:52:31.665 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:52:31.667 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:52:31.677 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:31.781 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:31.890 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.001 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.110 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.219 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.325 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.435 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.544 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.651 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.761 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.869 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:32.924 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:52:32.968 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.30 seconds
+2026-04-06 20:52:32.969 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:52:32.969 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:52:32.971 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:52:33.430 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:52:33.431 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:52:33.431 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:52:33.431 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:52:33.446 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:52:33.928 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that.
+2026-04-06 20:52:33.999 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 25600
+2026-04-06 20:52:34.426 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady.
+2026-04-06 20:52:34.460 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 32768
+2026-04-06 20:52:34.894 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe.
+2026-04-06 20:52:34.939 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 42496
+2026-04-06 20:52:35.494 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  is in our neighborhood. Not that shady while maybe one or two.
+2026-04-06 20:52:35.622 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 51712
+2026-04-06 20:52:36.149 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two.
+2026-04-06 20:52:36.289 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 61440
+2026-04-06 20:52:36.837 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady, well, maybe one or two. This is quite a...
+2026-04-06 20:52:36.910 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 73728
+2026-04-06 20:52:37.434 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really.
+2026-04-06 20:52:37.793 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 88064
+2026-04-06 20:52:38.422 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but yeah.
+2026-04-06 20:52:38.453 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 97792
+2026-04-06 20:52:39.098 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady, well, maybe one or two. It's quite a mix, really, but nothing too.
+2026-04-06 20:52:39.230 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 109568
+2026-04-06 20:52:39.899 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy.
+2026-04-06 20:52:40.040 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 123904
+2026-04-06 20:52:40.714 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady, well, maybe one or two. It's quite a mix, really, but nothing too crazy. It wasn't like that date.
+2026-04-06 20:52:40.930 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 136192
+2026-04-06 20:52:41.657 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but...
+2026-04-06 20:52:41.851 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 152576
+2026-04-06 20:52:42.735 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but yeah, I feel like I experienced.
+2026-04-06 20:52:42.829 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 166912
+2026-04-06 20:52:43.577 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but yeah, I feel like I experienced something pretty.
+2026-04-06 20:52:43.617 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 179200
+2026-04-06 20:52:44.530 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous. Yeah, I feel like I experienced something pretty similar.
+2026-04-06 20:52:44.630 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 196096
+2026-04-06 20:52:45.463 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but yeah. I feel like I experienced something pretty similar where I could bike in the neighborhood.
+2026-04-06 20:52:45.598 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 212992
+2026-04-06 20:52:46.556 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but yeah. I feel like I experienced something pretty similar where I could bike in the neighborhood.
+2026-04-06 20:52:46.639 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 229376
+2026-04-06 20:52:47.595 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really, but nothing too crazy. It wasn't like that dangerous, but yeah. I feel like I experienced something pretty similar where I could bike in the neighborhood. We could play with the...
+2026-04-06 20:52:47.648 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 243712
+2026-04-06 20:52:48.299 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:52:48.302 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 253952
+2026-04-06 20:52:48.303 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:52:48.304 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:52:48.306 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:52:48.308 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.421 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.531 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.640 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.748 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.848 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  in our neighborhood. Not that shady while maybe one or two. It's quite a mix really but nothing too crazy. It wasn't like that dangerous but yeah I feel like I experienced something pretty similar where I could bike in the neighborhood we could play with the neighborhood kids.
+2026-04-06 20:52:48.857 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:48.966 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.075 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.184 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.292 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.403 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.512 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.622 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.730 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.840 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:49.870 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:52:49.897 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.59 seconds
+2026-04-06 20:52:49.898 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:52:49.898 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:52:49.900 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:52:50.546 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:52:50.546 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:52:50.546 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:52:50.546 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:52:50.561 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 17920
+2026-04-06 20:52:50.927 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  into a few...
+2026-04-06 20:52:50.966 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 23040
+2026-04-06 20:52:51.394 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  to a few, I went to a f-
+2026-04-06 20:52:51.465 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 32256
+2026-04-06 20:52:51.915 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I went to a few sleep-ups.
+2026-04-06 20:52:51.974 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 39424
+2026-04-06 20:52:52.460 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I went to a few sleepovers.
+2026-04-06 20:52:52.526 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 49152
+2026-04-06 20:52:52.970 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I went to a few sleepovers at Friends Health.
+2026-04-06 20:52:53.033 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 56320
+2026-04-06 20:52:53.571 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  to a few, I went to a few sleepovers at Friends' houses.
+2026-04-06 20:52:53.703 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 68608
+2026-04-06 20:52:54.338 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  to a few, I went to a few sleepovers at Friends' houses. That's a pretty common of...
+2026-04-06 20:52:54.393 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 77824
+2026-04-06 20:52:54.962 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  to a few, I went to a few sleepovers at Friends' houses. That's a pretty common American.
+2026-04-06 20:52:54.989 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 87552
+2026-04-06 20:52:55.566 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  to a few, I went to a few sleepovers at Friends' houses. That's a pretty common American thing.
+2026-04-06 20:52:55.647 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 99840
+2026-04-06 20:52:56.303 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I went to a few sleepovers at Friends' houses. That's a pretty common American thing. You can spend...
+2026-04-06 20:52:56.505 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 111616
+2026-04-06 20:52:57.130 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  I went to a few sleepovers at Friends' houses. That's a pretty common American thing. You can spend the night at a friend.
+2026-04-06 20:52:57.589 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:52:57.591 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 129024
+2026-04-06 20:52:57.592 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:52:57.618 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:52:57.620 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:52:57.638 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:57.743 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:57.853 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:57.961 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.070 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.180 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.289 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.398 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.508 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.617 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.725 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:52:58.754 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:52:58.793 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.17 seconds
+2026-04-06 20:52:58.794 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:52:58.794 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:52:58.796 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:52:59.696 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:52:59.696 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:52:59.696 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:52:59.696 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:52:59.707 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:53:00.068 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much
+2026-04-06 20:53:00.091 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 23552
+2026-04-06 20:53:00.533 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it week
+2026-04-06 20:53:00.563 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 30720
+2026-04-06 20:53:00.987 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it, we couldn't...
+2026-04-06 20:53:01.027 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 37888
+2026-04-06 20:53:01.439 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk.
+2026-04-06 20:53:01.469 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 45056
+2026-04-06 20:53:01.937 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it, we couldn't walk to any
+2026-04-06 20:53:02.103 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 56832
+2026-04-06 20:53:02.543 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any...
+2026-04-06 20:53:02.695 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 66560
+2026-04-06 20:53:03.130 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops.
+2026-04-06 20:53:03.161 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 73728
+2026-04-06 20:53:03.738 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I
+2026-04-06 20:53:03.777 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 83456
+2026-04-06 20:53:04.275 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived stuff.
+2026-04-06 20:53:04.311 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 90624
+2026-04-06 20:53:04.829 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away.
+2026-04-06 20:53:04.861 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 100352
+2026-04-06 20:53:05.386 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from
+2026-04-06 20:53:05.410 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 109568
+2026-04-06 20:53:05.947 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shop
+2026-04-06 20:53:05.962 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 116736
+2026-04-06 20:53:06.503 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shops
+2026-04-06 20:53:06.590 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 129024
+2026-04-06 20:53:07.212 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shops or our school
+2026-04-06 20:53:07.248 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 138752
+2026-04-06 20:53:07.831 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shops or our school we couldn't
+2026-04-06 20:53:07.948 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 150528
+2026-04-06 20:53:08.581 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school, we couldn't walk.
+2026-04-06 20:53:08.623 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 160256
+2026-04-06 20:53:09.268 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shops or our school we couldn't walk anywhere
+2026-04-06 20:53:09.298 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 172032
+2026-04-06 20:53:10.056 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it we couldn't walk to any shops because I lived so far away from shops or our school we couldn't walk anywhere. We lived in the suburbs
+2026-04-06 20:53:10.127 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 184320
+2026-04-06 20:53:10.878 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shop.
+2026-04-06 20:53:10.947 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 198656
+2026-04-06 20:53:11.803 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walk.
+2026-04-06 20:53:11.885 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 212992
+2026-04-06 20:53:12.716 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walkable. Yeah.
+2026-04-06 20:53:12.774 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 227328
+2026-04-06 20:53:13.742 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walkable. Yeah, you could just kind of stick.
+2026-04-06 20:53:13.817 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 244224
+2026-04-06 20:53:14.744 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walkable. Yeah, you could just kind of stay in your neighbor.
+2026-04-06 20:53:14.845 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 261120
+2026-04-06 20:53:16.302 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walkable. Yeah, you could just kind of stay in your neighborhood.
+2026-04-06 20:53:16.341 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 282624
+2026-04-06 20:53:17.359 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Pretty much it. We couldn't walk to any shops because I lived so far away from shops or our school. We couldn't walk anywhere. We lived in the suburbs. There's not a lot of shops that are just walkable. Yeah, you could just kind of stay in your neighborhood. But we didn't have...
+2026-04-06 20:54:29.133 - RealTimeSTT: realtimestt - DEBUG - Receive from stdout pipe
+2026-04-06 20:54:29.133 - RealTimeSTT: realtimestt - INFO - None
+2026-04-06 20:54:29.134 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 287232
+2026-04-06 20:54:29.134 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:54:29.184 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:54:29.184 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:54:29.200 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:54:29.200 - RealTimeSTT: realtimestt - ERROR - Unhandled exeption in _recording_worker: [WinError 6] Identificador inválido
+Traceback (most recent call last):
+  File "C:\Users\Bruno\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\RealtimeSTT\audio_recorder.py", line 1919, in _recording_worker
+    data = self.audio_queue.get(timeout=0.01)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\queues.py", line 111, in get
+    if not self._poll(timeout):
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 346, in _poll
+    return bool(wait([self], timeout))
+                ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1100, in wait
+    ov.cancel()
+    ~~~~~~~~~^^
+OSError: [WinError 6] Identificador inválido
+2026-04-06 20:55:14.119 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:55:14.143 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:55:16.370 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:55:16.371 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:55:16.371 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:55:17.268 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:55:17.270 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:55:17.270 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:55:25.715 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:55:25.715 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:55:25.716 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:55:25.716 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:55:25.718 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:55:26.390 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:55:26.390 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:55:26.390 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:55:26.390 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:55:26.396 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 9216
+2026-04-06 20:55:26.933 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they?
+2026-04-06 20:55:29.367 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 54784
+2026-04-06 20:55:30.064 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they have the same type of freedom that we...
+2026-04-06 20:55:30.290 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 71680
+2026-04-06 20:55:30.986 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they have the same type of freedom that we had as...
+2026-04-06 20:55:31.043 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 83968
+2026-04-06 20:55:31.728 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they have the same type of freedom that we had as kids?
+2026-04-06 20:55:31.770 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 93184
+2026-04-06 20:55:32.475 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they have the same type of freedom that we had as kids?
+2026-04-06 20:55:32.475 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 105472
+2026-04-06 20:55:33.174 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Do they have the same type of freedom that we had as kids?
+2026-04-06 20:55:33.746 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:55:33.750 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 124928
+2026-04-06 20:55:33.750 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:55:33.757 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:55:33.758 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:55:33.761 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:33.863 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:33.971 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.080 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.191 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.300 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.410 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.521 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.631 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.740 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.849 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:34.958 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:55:35.001 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:55:35.033 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.27 seconds
+2026-04-06 20:55:35.034 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:55:35.034 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:55:35.035 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:55:35.388 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:55:35.388 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:55:35.388 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:55:35.388 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:55:35.404 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:55:35.997 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Not really.
+2026-04-06 20:55:36.038 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 27648
+2026-04-06 20:55:36.597 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Not really.
+2026-04-06 20:55:36.597 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 37376
+2026-04-06 20:55:37.260 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Not really. A little bit less.
+2026-04-06 20:55:37.305 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 47104
+2026-04-06 20:55:37.938 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less I'd say.
+2026-04-06 20:55:38.235 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 64000
+2026-04-06 20:55:38.880 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less I'd say. Yeah.
+2026-04-06 20:55:38.911 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 73216
+2026-04-06 20:55:39.575 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less I'd say. Yeah, I feel like
+2026-04-06 20:55:39.741 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 87552
+2026-04-06 20:55:40.464 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like...
+2026-04-06 20:55:40.489 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 99840
+2026-04-06 20:55:41.230 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents.
+2026-04-06 20:55:41.265 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 111616
+2026-04-06 20:55:42.029 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age.
+2026-04-06 20:55:42.065 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 123904
+2026-04-06 20:55:42.906 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more.
+2026-04-06 20:55:42.950 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 138240
+2026-04-06 20:55:43.777 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged or a little more caught.
+2026-04-06 20:55:43.855 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 152576
+2026-04-06 20:55:44.729 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Not really. A little bit less, I'd say. Yeah. I feel like a lot of parents are age or a little more cautious with their kids.
+2026-04-06 20:55:44.819 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 166912
+2026-04-06 20:55:45.736 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so.
+2026-04-06 20:55:45.774 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 183808
+2026-04-06 20:55:46.650 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like...
+2026-04-06 20:55:46.719 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 198144
+2026-04-06 20:55:47.678 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged or a little more cautious with their kids, like even more so, especially like biking.
+2026-04-06 20:55:47.875 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 217600
+2026-04-06 20:55:48.850 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood.
+2026-04-06 20:55:48.902 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 233984
+2026-04-06 20:55:49.919 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear.
+2026-04-06 20:55:50.152 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 253440
+2026-04-06 20:55:51.213 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of cars.
+2026-04-06 20:55:51.262 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 270336
+2026-04-06 20:55:52.343 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of cars. And I actually...
+2026-04-06 20:55:52.393 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 289280
+2026-04-06 20:55:53.489 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear of cars. I actually, in our neighborhood, we...
+2026-04-06 20:55:53.691 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 310784
+2026-04-06 20:55:54.902 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged, or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear of cars. And I actually, in our neighborhood, our kids are out all the time.
+2026-04-06 20:55:55.795 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 344576
+2026-04-06 20:55:56.982 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged, are a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear of cars. And I actually, in our neighborhood, our kids are out all the time. We have them running around.
+2026-04-06 20:55:57.375 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 368640
+2026-04-06 20:55:58.719 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear of cars. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up.
+2026-04-06 20:55:59.107 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 397312
+2026-04-06 20:56:00.597 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  Not really. A little bit less, I'd say. Yeah. I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, running up and down our road, which is a dead end.
+2026-04-06 20:56:00.910 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 425984
+2026-04-06 20:56:02.451 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really, a little bit less, I'd say. Yeah, I feel like a lot of parents are aged, are a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood. The fear of cars. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous.
+2026-04-06 20:56:03.061 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 459776
+2026-04-06 20:56:04.620 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous. And they're off.
+2026-04-06 20:56:05.240 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 494080
+2026-04-06 20:56:07.126 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous.  They're often the only kids out so...
+2026-04-06 20:56:07.219 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 526848
+2026-04-06 20:56:08.941 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous.  They're often the only kids out, so I feel like a lot of kids are in...
+2026-04-06 20:56:09.008 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 556032
+2026-04-06 20:56:10.995 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous.  They're often the only kids out so I feel like a lot of kids are inside more but I don't know if that's really...
+2026-04-06 20:56:11.101 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 589312
+2026-04-06 20:56:13.007 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  not really a little bit less, I'd say. Yeah, I feel like a lot of parents are age or a little more cautious with their kids, like even more so, especially like biking somewhere in the neighborhood or the fear of car walking. And I actually, in our neighborhood, our kids are out all the time. We have them running around, you know, they can walk up, run up and down our road, which is a dead end, so it's not super dangerous.  They're often the only kids out, so I feel like a lot of kids are inside more, but I don't know if that's really necessarily the parents are.
+2026-04-06 20:56:30.311 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:56:30.311 - RealTimeSTT: realtimestt - ERROR - Unhandled exeption in _recording_worker: handle is closed
+Traceback (most recent call last):
+  File "C:\Users\Bruno\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\RealtimeSTT\audio_recorder.py", line 1919, in _recording_worker
+    data = self.audio_queue.get(timeout=0.01)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\queues.py", line 111, in get
+    if not self._poll(timeout):
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 346, in _poll
+    return bool(wait([self], timeout))
+                ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 1072, in wait
+    ov, err = _winapi.ReadFile(fileno(), 0, True)
+                               ~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 171, in fileno
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3312.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 137, in _check_closed
+    raise OSError("handle is closed")
+OSError: handle is closed
+2026-04-06 20:56:30.320 - RealTimeSTT: realtimestt - DEBUG - Receive from stdout pipe
+2026-04-06 20:56:30.320 - RealTimeSTT: realtimestt - INFO - None
+2026-04-06 20:56:30.337 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 608768
+2026-04-06 20:56:30.337 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:56:30.338 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:56:30.338 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:57:21.461 - RealTimeSTT: realtimestt - INFO - Starting RealTimeSTT
+2026-04-06 20:57:21.485 - RealTimeSTT: realtimestt - INFO - Initializing faster_whisper realtime transcription model tiny, default device: cpu, compute type: default, device index: 0, download root: None
+2026-04-06 20:57:23.735 - RealTimeSTT: realtimestt - DEBUG - Faster_whisper realtime speech to text transcription model initialized successfully
+2026-04-06 20:57:23.735 - RealTimeSTT: realtimestt - INFO - Initializing WebRTC voice with Sensitivity 3
+2026-04-06 20:57:23.735 - RealTimeSTT: realtimestt - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2026-04-06 20:57:24.667 - RealTimeSTT: realtimestt - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2026-04-06 20:57:24.668 - RealTimeSTT: realtimestt - DEBUG - Starting realtime worker
+2026-04-06 20:57:24.668 - RealTimeSTT: realtimestt - DEBUG - Waiting for main transcription model to start
+2026-04-06 20:57:31.511 - RealTimeSTT: realtimestt - DEBUG - Main transcription model ready
+2026-04-06 20:57:31.512 - RealTimeSTT: realtimestt - DEBUG - RealtimeSTT initialization completed successfully
+2026-04-06 20:57:31.512 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:57:31.512 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:57:31.514 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:58:05.002 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:58:05.002 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:58:05.002 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:58:05.003 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:58:05.007 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 7168
+2026-04-06 20:58:05.388 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them free
+2026-04-06 20:58:08.152 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 55296
+2026-04-06 20:58:08.880 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably free occupied.
+2026-04-06 20:58:09.000 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 69120
+2026-04-06 20:58:09.823 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably free occupied with other things.
+2026-04-06 20:58:10.091 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 86528
+2026-04-06 20:58:10.929 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things. If I had to guess.
+2026-04-06 20:58:11.007 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 102912
+2026-04-06 20:58:11.903 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things if I had to guess possibly we might talk about what
+2026-04-06 20:58:11.968 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 117248
+2026-04-06 20:58:12.888 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things if I had to guess possibly we might talk about what those other things
+2026-04-06 20:58:12.917 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 131584
+2026-04-06 20:58:13.814 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things if I had to guess possibly we might talk about what those other things are later
+2026-04-06 20:58:13.847 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 145920
+2026-04-06 20:58:14.781 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things if I had to guess possibly we might talk about what those other things are later so yeah I do
+2026-04-06 20:58:15.199 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 169984
+2026-04-06 20:58:16.153 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  them freedom and then I just think they're probably preoccupied with other things if I had to guess possibly we might talk about what those other things are later so yeah I do feel like our kids are
+2026-04-06 20:58:16.262 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:58:16.264 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 184832
+2026-04-06 20:58:16.264 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:58:16.332 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:58:16.333 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:58:16.335 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.440 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.551 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.660 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.770 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.879 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:16.990 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.099 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.209 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.319 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.427 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.536 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.646 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:58:17.716 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:58:17.744 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 1.41 seconds
+2026-04-06 20:58:17.745 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:58:17.745 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:58:17.746 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:58:18.344 - RealTimeSTT: realtimestt - INFO - voice activity detected
+2026-04-06 20:58:18.344 - RealTimeSTT: realtimestt - INFO - recording started
+2026-04-06 20:58:18.344 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'recording'
+2026-04-06 20:58:18.344 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording stop
+2026-04-06 20:58:18.363 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 18432
+2026-04-06 20:58:18.961 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think.
+2026-04-06 20:58:19.031 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 28160
+2026-04-06 20:58:19.674 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids I think a little more free.
+2026-04-06 20:58:19.723 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 39936
+2026-04-06 20:58:20.333 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than made.
+2026-04-06 20:58:20.447 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 49664
+2026-04-06 20:58:21.038 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the av...
+2026-04-06 20:58:21.082 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 61440
+2026-04-06 20:58:21.608 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average mal...
+2026-04-06 20:58:21.642 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 68608
+2026-04-06 20:58:22.199 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial.
+2026-04-06 20:58:22.544 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 85504
+2026-04-06 20:58:23.148 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent.
+2026-04-06 20:58:23.448 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 99840
+2026-04-06 20:58:24.131 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does.
+2026-04-06 20:58:24.215 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 112128
+2026-04-06 20:58:24.977 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does.
+2026-04-06 20:58:24.978 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 123904
+2026-04-06 20:58:25.693 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does.
+2026-04-06 20:58:25.693 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 133632
+2026-04-06 20:58:26.507 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does.
+2026-04-06 20:58:26.507 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 147968
+2026-04-06 20:58:27.388 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does.
+2026-04-06 20:58:27.389 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 162304
+2026-04-06 20:58:28.176 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of teeth.
+2026-04-06 20:58:28.340 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 176640
+2026-04-06 20:58:29.137 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of TV or they don't have-
+2026-04-06 20:58:29.307 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 193536
+2026-04-06 20:58:30.107 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phone.
+2026-04-06 20:58:30.152 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 205312
+2026-04-06 20:58:30.994 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of TV or they don't have computers or phones or anything.
+2026-04-06 20:58:31.044 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 220160
+2026-04-06 20:58:31.960 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything.
+2026-04-06 20:58:31.961 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 234496
+2026-04-06 20:58:32.928 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. I guess physical freedom.
+2026-04-06 20:58:32.982 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 250880
+2026-04-06 20:58:33.978 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. I guess physical freedom to live.
+2026-04-06 20:58:34.008 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 267776
+2026-04-06 20:58:35.047 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. I guess physical freedom to live. Oh, you want to go to the neighbors house.
+2026-04-06 20:58:35.121 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 284672
+2026-04-06 20:58:36.318 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know.
+2026-04-06 20:58:36.390 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 306176
+2026-04-06 20:58:37.528 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fun.
+2026-04-06 20:58:38.139 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 332800
+2026-04-06 20:58:39.393 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of TV or they don't have computers or phones or anything. So yeah, I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bull.
+2026-04-06 20:58:39.664 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 358912
+2026-04-06 20:58:40.976 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to live. Oh, you want to go to the neighbor's house. And we know that neighbor. Okay, that's fine. Are you? We let our children be bored, so that helps them get.
+2026-04-06 20:58:41.236 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 382976
+2026-04-06 20:58:42.588 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too though because we don't let them watch a lot of TV or they don't have computers or phones or anything. So yeah, I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they.
+2026-04-06 20:58:42.893 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 409600
+2026-04-06 20:58:44.290 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  give our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored, so that helps them get outside. Yeah, they have dug a hole.
+2026-04-06 20:58:44.616 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 438272
+2026-04-06 20:58:46.141 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to live. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored, so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.
+2026-04-06 20:58:46.987 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 476672
+2026-04-06 20:58:48.673 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored, so that helps them get outside. Yeah, they have dug a hole in our yard that's at least up to my waist. It is
+2026-04-06 20:58:49.279 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 512512
+2026-04-06 20:58:51.639 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep and what are our kids do?
+2026-04-06 20:58:51.834 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 553472
+2026-04-06 20:58:54.417 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're...
+2026-04-06 20:58:54.563 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 596480
+2026-04-06 20:58:56.729 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're looking for rope. We have enough space to do this, by the way.
+2026-04-06 20:58:57.038 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 634880
+2026-04-06 20:58:59.249 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're looking for rope. We have enough space to do this, by the way. It's not in anybody's walking path. It's not a safety hat.
+2026-04-06 20:58:59.373 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 673280
+2026-04-06 20:59:01.379 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're looking for rope. We have enough space to do this, by the way. Is that anybody's walking path? Yes. It's not a safety hazard. Don't worry. There's only a child.
+2026-04-06 20:59:01.531 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 707072
+2026-04-06 20:59:03.509 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're looking for rope. We have enough space to do this, by the way. Is that anybody's walking path? Yes. It's not a safety hazard. Don't worry. There's only a child buried in there. That's all. Yeah, I think that the-
+2026-04-06 20:59:03.589 - RealTimeSTT: realtimestt - DEBUG - Current realtime buffer size: 740864
+2026-04-06 20:59:05.447 - RealTimeSTT: realtimestt - INFO - recording stopped
+2026-04-06 20:59:05.460 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 770048
+2026-04-06 20:59:05.463 - RealTimeSTT: realtimestt - INFO - State changed from 'recording' to 'inactive'
+2026-04-06 20:59:05.601 - RealTimeSTT: realtimestt - DEBUG - Realtime text detected:  of our kids, I think a little more freedom than maybe the average millennial parent does. It depends on what you mean by freedom, too, though, because we don't let them watch a lot of TV or they don't have computers or phones or anything. So I guess physical freedom to let. Oh, you want to go to the neighbor's house and we know that neighbor. Okay, that's fine. Are you? We let our children be bored so that helps them get outside. Yeah, they have dug a hole in our yard that's at least.  up to my waist. It is so deep. And what are our kids doing? I don't know. Maybe digging a hole. They said they're looking for rope. We have enough space to do this, by the way. Is that anybody's walking path? Yes. It's not a safety hazard. Don't worry. There's only a child buried in there. That's all. Yeah, I think that's the biggest difference.
+2026-04-06 20:59:05.636 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'transcribing'
+2026-04-06 20:59:05.661 - RealTimeSTT: realtimestt - DEBUG - Adding transcription request, no early transcription started
+2026-04-06 20:59:05.671 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:05.772 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:05.882 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:05.990 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.098 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.207 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.316 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.426 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.534 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.643 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.753 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.862 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:06.972 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.081 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.189 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.299 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.409 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.518 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.627 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.736 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.845 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:07.955 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.065 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.173 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.282 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.393 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.501 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.609 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.719 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.828 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:08.936 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.047 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.156 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.265 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.375 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.483 - RealTimeSTT: realtimestt - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2026-04-06 20:59:09.502 - RealTimeSTT: realtimestt - INFO - State changed from 'transcribing' to 'inactive'
+2026-04-06 20:59:09.540 - RealTimeSTT: realtimestt - DEBUG - Model base completed transcription in 3.88 seconds
+2026-04-06 20:59:09.543 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:59:09.543 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:59:09.544 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
+2026-04-06 20:59:09.635 - RealTimeSTT: realtimestt - DEBUG - No samples removed, final audio length: 0
+2026-04-06 20:59:09.654 - RealTimeSTT: realtimestt - INFO - State changed from 'listening' to 'inactive'
+2026-04-06 20:59:09.699 - RealTimeSTT: realtimestt - DEBUG - Debug: Caught exception in main try block
+2026-04-06 20:59:09.796 - RealTimeSTT: realtimestt - INFO - Setting listen time
+2026-04-06 20:59:09.796 - RealTimeSTT: realtimestt - INFO - State changed from 'inactive' to 'listening'
+2026-04-06 20:59:09.797 - RealTimeSTT: realtimestt - DEBUG - Waiting for recording start
