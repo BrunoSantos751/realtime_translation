@@ -1,18 +1,17 @@
 # 🎙️ Realtime Translation
 
-Ferramenta de transcrição e tradução em tempo real do áudio do sistema (loopback), usando **OpenAI Whisper** para reconhecimento de fala. Captura o que está sendo reproduzido pelo computador e transcreve o conteúdo diretamente no terminal — com baixíssima latência.
+Ferramenta de transcrição e tradução em tempo real do áudio do sistema (loopback), usando a biblioteca **RealtimeSTT** (com Whisper no backend) para reconhecimento de fala contínuo. Captura o que está sendo reproduzido pelo computador e exibe o conteúdo transcrevendo e traduzindo como uma legenda na tela — com baixíssima latência.
 
 ---
 
 ## ✨ Funcionalidades Atuais
 
-- **Captura de áudio via Loopback (WASAPI)** — captura tudo que sai pelo dispositivo de saída padrão do Windows, sem necessidade de microfone.
-- **Buffer contínuo (Rolling Buffer)** — gerencia ativamente o fluxo de áudio, evitando acúmulo e latência progressiva.
-- **Pré-processamento de áudio** — converte para `float32`, mixagem stereo→mono e reamostragem para 16 kHz (padrão do Whisper).
-- **VAD simples (Voice Activity Detection)** — ignora silêncio com base em limiar de energia RMS, evitando transcrições vazias.
-- **Transcrição via OpenAI Whisper** — suporte a múltiplos modelos (`tiny`, `base`, `small`, `medium`, `large`) com aceleração GPU instantânea via CUDA.
-- **Tradução Offline Incremental** — uso do **Argos Translate** para converter texto de Inglês para Português, analisando apenas o delta das palavras novas, evitando repetição de texto já traduzido.
-- **Captura em thread separada** — o processamento principal não bloqueia a captura de áudio.
+- **Captura de áudio via Loopback (WASAPI)** — captura tudo que sai pelo dispositivo de saída padrão do Windows, sem necessidade de microfone, via `pyaudiowpatch`.
+- **Transcrição Contínua (RealtimeSTT)** — streaming contínuo enviando pedaços de áudio e recebendo eventos de `on_realtime_text` e `on_final_text`.
+- **Voice Activity Detection (VAD Inteligente)** — o Silero VAD (embutido no RealtimeSTT) isola a fala do silêncio, emitindo contexto perfeitamente cortado.
+- **Tradução Offline Incremental** — uso do **Argos Translate** para converter texto de Inglês para Português on-the-fly, sincronizado com os retornos streaming de áudio.
+- **Overlay Flutuante na Tela** — as legendas aparecem em uma janela transparente que sobrepõe outras aplicações de forma indolor e limpa (ideal para vídeos ou reuniões).
+- **Graceful Shutdown** — Gerenciamento adequado do ciclo de vida das threads para encerramentos seguros sem estourar pipelines do loop principal do sistema.
 
 ---
 
@@ -20,25 +19,23 @@ Ferramenta de transcrição e tradução em tempo real do áudio do sistema (loo
 
 ```
 realtime_translation/
-├── main.py                  # Ponto de entrada da aplicação
+├── main.py                  # Ponto de entrada da aplicação (gerencia STT, Treads e UI)
 ├── requirements.txt         # Dependências do projeto
 │
 ├── audio/
-│   ├── capture.py           # Captura de áudio loopback (WASAPI) com buffer circular
-│   └── preprocess.py        # Conversão, mixagem, reamostragem e VAD
+│   ├── capture.py           # Captura de áudio loopback (WASAPI)
+│   └── preprocess.py        # Conversão, mixagem, reamostragem (float32 para int16)
 │
 ├── speech/
-│   └── whisper_engine.py    # Wrapper do OpenAI Whisper para transcrição
+│   └── realtimestt_engine.py # Wrapper do RealtimeSTT conectando callbacks
 │
-├── pipeline/
-│   └── rolling_buffer.py    # Buffer contínuo para evitar latência cumulativa
 ├── translation/
 │   └── translator.py        # Módulo de tradução offline com Argos Translate
-├── overlay/                 # (futuro) Overlay na tela
+├── overlay/                 
+│   └── subtitle_window.py   # Interface gráfica (Overlay) baseada em Tkinter
 │
 └── tests/
-    ├── test_audio_buffer.py      # Testes do buffer de áudio
-    └── test_resample_speed.py    # Benchmark de reamostragem
+    └── test_audio_buffer.py # Scripts e testes legados
 ```
 
 ---
@@ -49,7 +46,6 @@ realtime_translation/
 
 - Windows 10/11
 - Python 3.10+
-- PyTorch instalado (com suporte a CUDA opcional, para GPU)
 
 ### Instalação
 
@@ -62,7 +58,7 @@ cd realtime_translation
 pip install -r requirements.txt
 ```
 
-> **Nota:** O `openai-whisper` requer `ffmpeg` instalado no sistema. Instale via [ffmpeg.org](https://ffmpeg.org/download.html) ou com `winget install ffmpeg`.
+> **Nota:** Instale o FFmpeg no sistema ou utilizando um gerenciador de pacotes como `winget install ffmpeg`.
 
 ### Executando
 
@@ -71,23 +67,22 @@ python main.py
 ```
 
 O programa irá:
-1. Detectar automaticamente o dispositivo de saída padrão (loopback).
-2. Carregar o modelo Whisper (`small` por padrão) e o modelo de tradução do Argos Translate (baixa automaticamente no primeiro uso).
-3. Iniciar a captura de áudio, executando VAD, transcrição em Inglês e tradução inteligente para o Português em tempo real no terminal.
+1. Detectar o dispositivo de reprodução de áudio padrão (loopback).
+2. Carregar o modelo RealtimeSTT na memória (configurado como `base` por padrão).
+3. Abrir o overlay transparente da interface gráfica.
+4. Escutar e processar o áudio do computador via background thread, jogando as legendas em PT-BR para a tela.
 
-Pressione `Ctrl+C` para encerrar.
+Pressione `Ctrl+C` no terminal ou simplesmente feche a janela do overlay para encerrar a aplicação com segurança.
 
 ### Configuração
 
-No `main.py`, você pode ajustar:
+No `main.py`, você pode ajustar alguns parâmetros base modificando as linhas:
 
 | Parâmetro | Onde | Descrição |
 |---|---|---|
-| `model_name` | `WhisperTranscriber(model_name=...)` | Modelo Whisper: `tiny`, `base`, `small`, `medium`, `large` |
-| `chunk_duration` | `capturer.start_capture(...)` | Duração da captura rápida de cada chunk em segundos (ex: `0.4s`) |
-| `language` | `transcriber.transcribe(..., language=...)` | Idioma de *origem* capturado no áudio, ex: `"en"` |
-| `window_size` | `RollingAudioBuffer(window_size=...)` | Tamanho da janela enviada ao Whisper (padrão: `2.5s`) |
-| `from_code` / `to_code` | `TranslationEngine(from_code=..., to_code=...)` | Idiomas de tradução, do Argos Translate (ex: `"en"` para `"pt"`) |
+| `model_name` | `RealtimeSTTTranscriber(model_name=...)` | Modelo STT de reconhecimento: `tiny`, `base`, `small`, `medium`, `large` |
+| `chunk_duration` | `capturer.start_capture(...)` | Duração do buffer de gravação rápida (ex.: `0.15s` garante alta reatividade) |
+| `from_code` / `to_code` | Dentro de `TranslationEngine(...)` | Idiomas de origem e destino da tradução via Argos Translate |
 
 ---
 
@@ -95,20 +90,17 @@ No `main.py`, você pode ajustar:
 
 | Pacote | Função |
 |---|---|
-| `pyaudiowpatch` | Captura de áudio loopback via WASAPI no Windows |
-| `openai-whisper` | Modelo de reconhecimento de fala |
-| `torch` | Backend para execução do Whisper (CPU ou GPU) |
-| `numpy` | Manipulação de arrays de áudio |
-| `scipy` | Reamostragem de áudio |
-| `argostranslate` | Tradução local offline |
+| `pyaudiowpatch` | Captura de áudio loopback via WASAPI no Windows excluso para loopbacks de áudio |
+| `RealtimeSTT` | Engine de reconhecimento de voz baseada em Whisper otimizada para tempo real e streaming |
+| `argostranslate` | Tradução local e offline que preserva a privacidade e velocidade |
+| `numpy` / `scipy` | Processamento matemático do áudio cru |
 
 ---
 
 ## 🗺️ Roadmap
 
 - [x] **Módulo de Tradução offline** — traduzindo transcrições com algoritmos anti-repetição usando Argos Translate.
-- [ ] **Overlay na Tela** — exibição do texto transcrito/traduzido como uma janela flutuante transparente sobre outras aplicações (ideal para lives, videoconferências e conteúdo em língua estrangeira).
+- [x] **Overlay na Tela** — exibição do texto transcrito/traduzido como uma janela flutuante transparente sobre outras aplicações (ideal para lives, videoconferências e conteúdo em língua estrangeira).
 - [ ] **Seleção de idioma de origem e destino** via interface ou configuração.
-- [ ] **Interface gráfica (GUI)** — controles para iniciar/parar, selecionar modelo e idioma.
+- [ ] **Interface gráfica (GUI)** — controles expandidos na própria janela para alternar modelos on-the-fly.
 - [ ] **Histórico de transcrições** — salvar transcrições em arquivo de texto.
-
