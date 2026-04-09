@@ -65,7 +65,7 @@ def audio_processing_loop(overlay: SubtitleOverlay):
             audio_float = convert_to_float32(combined_data)
             audio_mono = to_mono(audio_float, channels)
 
-            # VAD Check simples para medir silê ncio (mantemos para detectar pausas longas)
+            # VAD Check simples para medir silêncio (mantemos para detectar pausas longas)
             rms = float(np.sqrt(np.mean(audio_mono ** 2)))
             speech_detected = rms > 0.001
 

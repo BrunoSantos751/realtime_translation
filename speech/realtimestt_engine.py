@@ -83,7 +83,7 @@ class RealtimeSTTTranscriber:
 
     def reset(self):
         if self._ready.is_set():
-            self._recorder.reset()
+            # self._recorder.reset() # Removed: not supported in AudioToTextRecorder
             self._translator.clear_state()
 
     def shutdown(self):
