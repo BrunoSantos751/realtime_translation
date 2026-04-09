@@ -14,7 +14,7 @@ def audio_to_int16_mono(audio_float32: np.ndarray) -> bytes:
     return audio_int16.tobytes()
 
 
-def audio_processing_loop(overlay: SubtitleOverlay):
+def audio_processing_loop(overlay: SubtitleOverlay, stop_event: threading.Event):
     capturer = AudioCapture()
 
     # Inicializa o STT com callbacks traduzidos que atualizam o overlay de forma thread-safe
@@ -38,7 +38,7 @@ def audio_processing_loop(overlay: SubtitleOverlay):
         silence_duration = 0.0
         SILENCE_THRESHOLD = 1.5  # segundos de silencio para resetar
 
-        while True:
+        while not stop_event.is_set():
             # Puxa TODOS os pedaços acumulados na fila para evitar atrasos (latência)
             chunks = []
             while True:
@@ -108,8 +108,11 @@ def main():
     print("Inicializando Overlay de Legendas...")
     overlay = SubtitleOverlay(font_size=32)
 
+    # Evento para sinalizar o encerramento da thread de áudio
+    stop_event = threading.Event()
+
     # Inicia o processamento de áudio em uma thread separada (background)
-    audio_thread = threading.Thread(target=audio_processing_loop, args=(overlay,), daemon=True)
+    audio_thread = threading.Thread(target=audio_processing_loop, args=(overlay, stop_event), daemon=True)
     audio_thread.start()
 
     # Inicia o loop principal do Tkinter (UI) na thread principal
@@ -117,7 +120,11 @@ def main():
     try:
         overlay.start()
     except KeyboardInterrupt:
-        print("\nEncerrando aplicação...")
+        print("\nEncerrando aplicação via teclado...")
+    finally:
+        print("\nSinalizando encerramento para as threads em background...")
+        stop_event.set()
+        audio_thread.join(timeout=3.0)
         overlay.close()
 
 
