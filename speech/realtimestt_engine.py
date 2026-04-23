@@ -9,46 +9,63 @@ class RealtimeSTTTranscriber:
     Motor STT usando RealtimeSTT que substitui o WhisperTranscriber.
     - VAD interno (SileroVAD) elimina o VAD manual.
     - Usa feed_audio() com chunks do loopback (sem microfone direto).
-    - Transcricao streaming: atualiza o overlay DURANTE a fala com texto traduzido.
+    - Transcrição streaming: atualiza o overlay DURANTE a fala com texto traduzido.
     - Texto final traduzido com contexto (quando SileroVAD detecta fim de fala).
-    - feed_audio exige 16-bit mono PCM a 16kHz (compativel com nosso preprocess).
+    - feed_audio exige 16-bit mono PCM a 16kHz (compatível com nosso preprocess).
     """
 
-    def __init__(self, model_name="base", language="en", on_realtime_text=None, on_final_text=None):
-        self.language = language
+    def __init__(
+        self,
+        model_name: str = "base",
+        src_lang: str = "en",
+        tgt_lang: str = "pt",
+        translate: bool = True,
+        on_realtime_text=None,
+        on_final_text=None,
+    ):
+        self.src_lang = src_lang
         self._recorder = None
         self._ready = threading.Event()
-        self._translator = TranslationEngine()
+
+        # Cria o motor de tradução (modo passthrough se translate=False ou src==tgt)
+        effective_tgt = tgt_lang if (translate and tgt_lang != src_lang) else src_lang
+        self._translator = TranslationEngine(from_code=src_lang, to_code=effective_tgt)
+
         self._text_thread = None
 
-        # Callback parcial: traduz incrementalmente e envia para o overlay
+        # Callback parcial: traduz/passthrough incrementalmente e envia para o overlay
         def _wrap_realtime_callback(raw_text: str):
             if not raw_text.strip():
                 self._translator.clear_state()
                 if on_realtime_text:
                     on_realtime_text("")
                 return
-            translated, _ = self._translator.incremental_translate(raw_text)
-            print(f"\r[RT] EN: {raw_text}  |  PT: {translated}", end="", flush=True)
+            result, _ = self._translator.incremental_translate(raw_text)
+            if self._translator.needs_translation:
+                print(f"\r[RT] {src_lang.upper()}: {raw_text}  |  {tgt_lang.upper()}: {result}", end="", flush=True)
+            else:
+                print(f"\r[RT] {src_lang.upper()}: {raw_text}", end="", flush=True)
             if on_realtime_text:
-                on_realtime_text(translated)
+                on_realtime_text(result)
 
         # Wrapper para texto final: traduz com contexto (reset incremental + traduz tudo)
         def _wrap_final_callback(raw_text: str):
             if not raw_text.strip():
                 self._translator.clear_state()
                 return
-            # Limpa estado incremental e traduz o texto completo para contexto
             self._translator.clear_state()
-            translated, _ = self._translator.incremental_translate(raw_text)
-            print(f"\n[FN] EN: {raw_text}  |  PT: {translated}")
+            result, _ = self._translator.incremental_translate(raw_text)
+            if self._translator.needs_translation:
+                print(f"\n[FN] {src_lang.upper()}: {raw_text}  |  {tgt_lang.upper()}: {result}")
+            else:
+                print(f"\n[FN] {src_lang.upper()}: {raw_text}")
             if on_final_text:
-                on_final_text(translated)
+                on_final_text(result)
 
-        print(f"Loading RealtimeSTT model '{model_name}' (language={language})...")
+        print(f"Carregando modelo RealtimeSTT '{model_name}' (idioma de entrada={src_lang})...")
         self._recorder = AudioToTextRecorder(
             model=model_name,
-            language=self.language,
+            language=src_lang,
             use_microphone=False,
             beam_size=1,
             enable_realtime_transcription=True,
@@ -68,11 +85,11 @@ class RealtimeSTTTranscriber:
         self._text_thread = _th.Thread(target=_text_loop, daemon=True)
         self._text_thread.start()
 
-        print("RealtimeSTT model loaded.")
+        print("Modelo RealtimeSTT carregado.")
         self._ready.set()
 
-    def feed_audio(self, audio_int16_mono_bytes):
-        """Alimenta o STT com chunk de audio 16-bit mono PCM a 16kHz."""
+    def feed_audio(self, audio_int16_mono_bytes: bytes):
+        """Alimenta o STT com chunk de áudio 16-bit mono PCM a 16kHz."""
         if self._ready.is_set():
             self._recorder.feed_audio(audio_int16_mono_bytes)
 
@@ -83,7 +100,7 @@ class RealtimeSTTTranscriber:
 
     def reset(self):
         if self._ready.is_set():
-            # self._recorder.reset() # Removed: not supported in AudioToTextRecorder
+            # self._recorder.reset() # Não suportado pelo AudioToTextRecorder
             self._translator.clear_state()
 
     def shutdown(self):
